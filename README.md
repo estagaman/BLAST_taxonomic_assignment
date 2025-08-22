@@ -1,4 +1,4 @@
-# PacBio_16S_Downstream_Analysis
+# Taxonomic Assignment Long-Read 16S using BLAST and the Command Line
 A collection of code for taxonomy assignment using BLAST, alpha and beta diversity evaluation, differential abundance analysis, and community visualization
 
 
@@ -100,6 +100,8 @@ wc -l <<desired_file.fasta>>
 
 This will show the number of sequences processed so far for a particular output file. 
 
+
+## Step 2: Format and Process the BLAST Results
 
 
 
