@@ -36,15 +36,11 @@ for f in *tar.gz; do tar -xf $f; done
 
 For me, this is 16S_ribosomal_RNA, but there are other pre-made BLAST databases available depending on your research question and sequencing type.
 
-Now, we can run BLAST! 
+
+
+***Now, we can run BLAST!*** 
 
 To speed up running time, we are going to ***split our fasta file*** into multiple mini-files that can be run in parallel. 
-
-```bash
-
-perl <path-to-ncbi-blast-2.2.30+-x64-linux/bin/update_blastdb.pl> --passive 16S_ribosomal_RNA
-
-for f in *tar.gz; do tar -xf $f; done
 
 ```bash
 pyfasta split -n <<number of files you want>> <<your_fasta.fasta>>
